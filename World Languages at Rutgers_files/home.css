@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  color: black;
+  font-family: 'Merriweather', serif;
+}
+
+/*header area, including navigation*/
+.nav{
+  display: block;
+  width: 100%;
+  height: 220px;
+    padding: 2px;
+  background-color: #FFF8DC;
+  background-size: auto 60px;
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.15);
+}
+
+#nav_logo{
+    height:140px;
+    width: 30%;
+    float:left;
+}
+
+#nav_logo img{
+    height:inherit;
+    width:100%;
+}
+
+#nav_title{
+    height:140px;
+    margin-left:30%;
+}
+
+#nav_title h1{
+    font-weight: bold;
+    font-size:300%;
+    text-align: center;
+    font-family: 'UnifrakturCook', cursive;
+}
+
+#nav_bar{
+    height:70px;
+    background-color:#ffe680;
+    padding: 2px;
+    overflow: hidden;
+}
+
+#nav_bar ul{
+    margin:0;
+    list-style-type: none;
+}
+
+#nav_bar li{
+    display: inline;
+    float:left;
+}
+
+#nav_bar a{
+    display: block;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav_bar a:hover:not(.active){
+    background-color:#ffd633;
+}
+
+.active{
+    background-color:#ffcc00;
+}
+/*THE END of header area*/
+
+/*content area*/
+.content{
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 2px;
+  background-color: #fffae6;
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.15);
+}
+
+.content p{
+  margin: 4px;
+  border: 4px;
+  padding: 4px;
+  word-spacing: 1.5px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.content p{
+    margin-right:3%;
+    margin-left:3%;
+}
+
+.content h2{
+    text-align: center;
+}
+
+.video{
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+}
+
+.part1{
+    height:100%;
+}
+
+#part1_image img{
+    margin-left: 3%;
+    margin-top: 5%;
+    margin-right: 4%;
+    float: right;
+    height: 32%;
+    width: 40%;
+}
+#part1_text{
+    margin-right: 50%;
+    height: 80%;
+}
+/*THE END of Part 1*/
+
+/*THE BEGINNING of Part 2*/
+.part2{
+    margin-top: 3%;
+}
+/*THE END of Part 2*/
+
+/*THE BEGINNING of Part 3*/
+.part3{
+    margin-top: 3%;
+}
+
+.part3 img{
+    margin: auto;
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+/*THE END of Part 3*/
+
+/*THE BEGINNING of Part 4*/
+.part4{
+    height:100%;
+}
+
+#part4_image img{
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-right: 5%;
+    float: left;
+    height: 32%;
+    width: 40%;
+}
+#part4_text{
+    margin-left: 50%;
+    height: 80%;
+}
+/*THE END of Part 4*/
+
+.footer{
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 4px;
+  text-align: right;
+  background-color: #F5F5DC;
+  background-size: auto;
+  background-repeat: repeat;
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.15);
+}
