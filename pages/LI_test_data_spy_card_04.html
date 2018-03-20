@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<!--created 20180310 -->
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	
+	<title>Languages Information</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../styles/info.css">
+
+	<style>
+		@media only screen and (max-width: 720px), (max-aspect-ratio: 768/1024){
+			#sidebar {
+				display: none;
+			}
+		}
+		@media only screen and (min-width: 720px) and (min-aspect-ratio: 768/1024){
+			#sidebar {
+				display: initial;
+			}
+		}
+	</style>
+</head>
+
+<body translate="no"  data-spy="scroll" data-target=".lang_sublist" data-offset="300" >
+<!--navigation area-->
+<div>
+	<div class="col-sm-4 col-xs-12" id="site_logo">
+		<img src="../images/Aresty_Logo.png" alt="aresty_logo">
+	</div>
+	<div class="col-lg-8 col-sm-12" style="display: inline-block;" id="site_title">
+		<h1>World Languages at Rutgers</h1>
+	</div>
+</div>
+	<!--navigation bar-->
+<div class="navbar navbar-expand-md navbar-dark col-12" style="background-color: #E74C3C;">
+	<a class="navbar-brand" href="#"><i>Stories of Languages @ Rutgers</i></a>
+	<!--The menu button that appears in smaller window-->
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".nav_content" >
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<!--List of Navbar Items-->	
+	<div class="container-fluid">
+		<div class="nav_content collapse navbar-collapse" id="navbar_main">
+		<ul class="navbar-nav mr-auto" id="nav_bar">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Language Information</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Video Clips
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown" id="drop_down" style="background-color: #A93226;">
+					<a class="dropdown-item" href="#">"Rutgers Alma Mater"</a>
+					<a class="dropdown-item" href="#">Interview Clips</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#" style="color: #D0D3D4;">About our Interview</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" href="#">Who we are</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" href="#" style="text-transform: none;">Contact us</a>
+			</li>
+		</ul>
+		<!--form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form-->
+		</div>
+	</div>
+</div>
+
+<!--END of navigation area-->
+
+<div><button class="btn btn-primary sticky-top" id="sidebar_toggler">
+	Toggle List
+</button></div>
+
+<!--START content area-->
+<div class="container-fluid">
+	<!--START cascaded list of languages-->
+	<!--<div class="row">
+		<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#lang_list"></button>
+	</div>-->
+	
+	<!--<div class="collapse"  id="lang_list">-->
+	<div class="navbar navbar-expand-md navbar-light bg-light sticky-top" id="sidebar" style="float: left;  overflow: auto; height: 100vh;">
+	
+	<div class="collapse navbar-collapse nav_content">
+		<div id="lang_list">
+				<!--(START)Group: Africa-->
+			<div class="card" id="africa">
+				<div class="card-header">
+					<button class="btn btn-warning" data-toggle="collapse" data-target="#list-africa">
+							Africa
+					</button>
+				</div>
+
+				<div class="collapse show" id="collase-africa">
+					<p>more to offer</p>
+					<!--<div class="card-body">
+						<div class="list-group lang_sublist" id="list-africa">
+						<a class="list-group-item list-group-item-action" href="#"></a>
+						</div>
+					</div>-->
+				</div>
+			</div>
+			<!--(END)Group: Africa-->
+
+			<!--(START)Group: Asian & Pacific-->
+			<div class="card" id="asia">
+				<div class="card-header">
+					<button class="btn btn-success" data-toggle="collapse" data-target="#collapse-asia">
+							Asia &amp; Pacific
+					</button>
+				</div>
+
+				<div class="collapse show" id="collapse-asia">
+					<div class="card-body">
+						<div class="list-group lang_sublist" id="list-asia">
+							<a class="list-group-item list-group-item-action" href="#Info_Bengali">Bengali</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Cantonese">Cantonese</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Gujarati">Gujarati</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Hakka">Hakka</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Hindi">Hindi</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Japanese">Japanese</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Korean">Korean</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Mandarin">Mandarin</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Tagalog">Tagalog</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Tamil">Tamil</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Vietnamese">Vietnamese</a>
+						</div>
+					</div>
+
+				</div>
+				
+			</div>
+		
+		<!--(END)Group: Asian & Pacific-->
+		<!--(START)Group: European-->
+			<div class="card" id="europe">
+				<div class="card-header">
+					<button class="btn btn-info" data-toggle="collapse" data-target="#collapse-europe">
+							European
+					</button>
+				</div>
+				<div class="collapse" id="collapse-europe">
+					<div class="card-body">
+						<div class="list-group lang_sublist" id="list-asia">
+							<a class="list-group-item list-group-item-action" href="#Info_Albanian">Albanian</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Bulgarian">Bulgarian</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Croatian">Croatian</a>
+							<a class="list-group-item list-group-item-action" href="#Info_German">German</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Hungarian">Hungarian</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Italian">Italian</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Luxembourgish">Luxembourgish</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Polish">Polish</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Ukrainian">Ukrainian</a>
+							<a class="list-group-item list-group-item-action" href="#Info_Yiddish">Yiddish</a>
+							</div>	
+					</div>
+				</div>
+				
+			</div>
+
+		<!--(END)Group: European-->
+		<!--(START)Group: Latin American-->
+			<div class="card" id="latin_america">
+				<div class="card-header">
+					<button class="btn btn-danger" data-toggle="collapse" data-target="#collapse-latin_america">
+						Latin America
+					</button>
+				</div>
+				<div class="collapse show" id="collapse-latin_america">
+					<div class="card-body">
+						<div class="list-group lang_sublist" id="list-latin_america">
+							<a class="list-group-item list-group-item-action" href="#Info_Haitian_Creole">Haitian Creole</a>
+						</div>
+					</div>	
+				</div>
+			</div>
+				
+			
+			<!--(END)Group: Latin American-->
+			<!--(START)Group: Middle Eastern-->
+			<div class="card" id="middle_eastern">
+				<div class="card-header">
+					<button class="btn btn-secondary" data-toggle="collapse" data-target="#collapse-middle_eastern">
+						Middle Eastern
+					</button>
+				</div>
+				<div class="collapse show" id="collapse-middle_eastern">
+					<div class="card-body">
+						<div class="list-group lang_sublist" id="list-middle_east">
+							<a class="lang_list_item list-group-item-action" href="#Info_Arabic">Arabic</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!--(END)Group: Middle Eastern-->
+	</div>
+	
+	<!--END cascaded list of languages-->
+	<div class="col-lg-9 col-xs-12" style="height: 100%; display: inline-block; position: relative;" id="lang_info">
+		<div class="bodyimg" id="img_1"><img src="../images/lang_info/Language_Information.jpg"></div>
+
+		<div class="info">
+			<div class="bodytext" id="top">
+				<p>This year we extend our research from European languages to world languages. So far, we have interviewed Rutgers-affiliated people who speak 12 different languages, including:<br><br>
+					Arabic, Bengali, Gujarati, Haitian Creole, Hindi, Hungarian, Japanese, Korean, Mandarin Chinese, Tagalog, Tamil, and Vietnamese.<br><br>
+				Here is a list of introductions about the interviewed languages.</p>
+			</div>
+
+			
+			<div id="Info_Bengali">
+				<h2>Bengali</h2>
+				<p>Bengali is an Indo-Aryan language native to the People’s Republic of Bangladesh and the Republic of India, being the sole official language and one of 22 official languages in Bangladesh and India, respectively.  There are about 210 million native speakers of Bengali worldwide, with roughly 166 million native speakers in Bangladesh and 83 million in India.  The 83 million speakers of the language within India place Bengali at the rank of second most spoken language in the country behind its dominant language of Hindi--6% of the India’s total population--and with Bangladesh, Bengali also ranks at seventh most spoken native language in the world.<br>
+				As Bengali is the national and sole official language of Bangladesh, it is spoken in every area of the country, though Bengali in India is restricted to the eastern states of Tripura, Jharkhand, Bihar, Odisha, and the Andaman &amp; Nicobar Islands.  Pockets of speakers are found around the world, including the Middle East, the United States, and the United Kingdom.<br>
+				Rutgers Univerity of New Brunswick has offered Bengali as a language course in the past, and the Bengali Student Association has existed.&nbsp;<a href="#top">^Top</a></p>
+			</div>
+			
+			<div id="Info_Cantonese">
+				<h2>Cantonese</h2>
+				<p>Content<a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Gujarati">
+				<h2>Gujarati</h2>
+				<p>Gujarati is an Indo-Aryan language native to the Indian state of Gujarat. Gujarati has 54.6 million speakers in India, which accounts for 4.5% of the Indian population. 4.2 million people speak Gujarati as a second or third language.
+				Although Rutgers does not offer language courses in Gujarati, there is an organization in New Brunswick campus to promote the Gujarati culture: the Raas and Garba Association. <a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Hakka">
+				<h2>Hakka</h2>
+				<p>Content.<a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Hindi">
+				<h2>Hindi</h2>
+				<p>Hindi is an Indo-Aryan language native to the Republic of India and one of the country’s 22 official languages. There are about 260 million native Hindi speakers within India and 60 million internationally, making it the dominant official language of the country. Hindi accounts for about 20% of India’s 1.33 billion citizens, and with its total amount of 320 million speakers ranks at number four in most common languages spoken natively in the world, behind Mandarin Chinese, Spanish, and English.
+				As Hindi is the most popular of Indian languages, it has a presence as an official language in many Indian states, but Hindi is dominant primarily in central and north-central India. The bulk of international speakers of Hindi reside within the Anglosphere and the Middle East.
+				Rutgers University of New Brunswick offers the option of minoring in Hindi as a language through 100-300 level courses. Student-run clubs are also available for students to participate in in the form of the Hindi-Urdu Language and Culture Club. <a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Japanese">
+				<h2>Japanese</h2>
+				<p>Japanese entails 125,000,000 speakers in Japan and 126,000,000 speakers around the world. In Asia, Japanese is mainly spoken in Japan.
+				Rutgers University offers Japanese as a minor, and a concentration within the East Asian Languages major. Opportunities to explore Japanese language are available through Japanese Conversation Club and a summer study abroad program.<a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Korean">
+				<h2>Korean</h2>
+				<p>Korean entails 78,000,000 speakers in both North and South Korea. In Asia, Korean is spoken in North and South Korea, where there are minor some differences in speech, writing, and vocabulary borne of the seventy-year separation of the two countries. However, they are fundamentally the same.
+				Rutgers University offers Korean as a minor, and a concentration within the East Asian Languages major. Opportunities to explore Korean language and culture are available through organizations such as the Korean Student Association and a study abroad program which enables students to study at Seoul National University for a semester. <a href="#"><u>Rutgers Alma Mater in Korean</u></a> <a href="#"><u>An interview video sample about Korean</u></a> <a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Mandarin">
+				<h2>Mandarin</h2>
+				<p>Mandarin Chinese entails 848,700,000 speakers in mainland China and Taiwan, and about 960,000,000 speakers worldwide. Over 70% of Chinese speakers identify Mandarin as their primary dialect. In Asia, Mandarin is spoken in mainland China, Hong Kong, Taiwan, Singapore, and Macau.
+				Rutgers University offers Mandarin Chinese as a major and minor, and a concentration within the East Asian Languages major. Opportunities to explore Chinese language and culture are available through clubs such as the Chinese Student Organization, the Chinese Conversation Club, and the China Care Club, as well as study abroad programs. <a href="#"><u>Rutgers Alma Mater in Mandarin</u></a><a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Tagalog">
+				<h2>Tagalog</h2>
+				<p>Tagalog is an Austronesian language native to the Philippines, where it is considered the national language along with English as an official language among 19 other recognized auxiliary languages. About 23 million native speakers of Tagalog reside in the Philippines--and another 5 million internationally--which out of the ~92 million citizens makes out to about 25% of the population; percentage of Tagalog speakers increase greatly when people with Tagalog as a secondary language are taken into account. Tagalog as a native language is ranked in 42nd place in regards to the amount of speakers in the world.
+				Because Tagalog is the national language of the Philippines, the language is found throughout the country. Due to much of the Philippine cities being populated by speakers of English, it is not uncommon to find relatively large populations of Tagalog speakers within countries of the Anglosphere.
+				Rutgers University of New Brunswick does not currently offer courses focusing on Tagalog in language education courses, nor are there mainstay courses studying Philippine culture. There is, however, the student-run Rutgers Association of Philippine Students available for students to participate in. <a href="#"><u>An interview video sample about Tagalog</u></a>	<a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Tamil">
+				<h2>Tamil</h2>
+				<p>Tamil is a language mainly spoken by the Tamil people of India and Sri Lanka, and is an official language of two countries: Sri Lanka and Singapore.Tamil has over 70 million native speaker worldwide.
+				Rutgers offers a course discussing about Tamil culture: Documenting the languages of New Jersey. Despite a low presence on campus, Tamil heritage students have established some interest group and discussion board online. <a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Vietnamese">
+				<h2>Vienamese</h2>
+				<p><a href="#top">^Top</a></p>
+			</div>
+
+			<div id="Info_Albanian">
+				<h2>Albanian</h2>
+				<p>The Albanian language consists of four varieties: Arbëreshë (260,000 speakers in
+				2005), Arvanitika (150,000 speakers, 2005), Gheg (4.2 million speakers, 2005), and
+				Tosk (3 million speakers, 2005). The principal language is Tosk. Arbëreshë is generally spoken in Italy, Arvanitika in Greece, Gheg in Albania, and Tosk in Albania.
+				Rutgers does not offer courses in Albanian. However, Albanian language and culture
+				is expressed through organizations like the Albanian club.
+				<a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Bulgarian">
+				<h2>Bulgarian</h2>
+				<p>Bulgarian is a South Slavic language spoken by approximately 9 million people worldwide. Most of its native speakers are found in Bulgaria, with other large native-speaking populations in Turkey, Moldova, Greece, and Romania. Modern Bulgarian dates from the 16th century, borrowing many words from Greek and Turkish during the period of Turkish domination. It has since incorporated more borrowed words from Russian, French, and German. Bulgarian is written using the Cyrillic script and is very similar to other Slavic languages, particularly in its grammar.
+
+				Bulgarian is not a language offered at Rutgers and there is a relatively small number of students who speak the language on campus.
+				<a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Croatian">
+				<h2>Croatian</h2>
+				<p>The Croatian language is a South Slavic language spoken primarily in Croatia by nearly 5 million people. Other Croatian speaking populations can be found in Bosnia and Herzegovina, parts of Serbia, and other neighboring countries. Croatian has many words of Latin and German origin and the language is closely related and mutually intelligible with Serbian, Bosnian, and Montenegrin.
+
+				Rutgers does not offer courses in Croatian, nor does it have Croatian language or cultural clubs on campus.
+				<a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_German">
+				<h2>German</h2>
+				<p>Content.<a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Hungarian">
+				<h2>Hungarian</h2>
+				<p>Hungarian has 13 million native speakers worldwide, of whom more than 9.8 million live in Hungary. It is the official language of Hungary, and also spoken by neighboring countries (Romania, Slovakia, and Serbia), as well as overseas Hungarian community.
+
+				Rutgers University, cooperated with Ministry of Culture and Education of the Republic of Hungary, established the Institute for Hungarian Studies in 1991. Rutgers offers language courses in Hungarian, and students are able to declare a minor on it. Students have established Hungarian Club to promote the language and culture.<a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Italian">
+				<h2>Italian</h2>
+				<p>Italian is a Romance language spoken by about 64 million native speakers worldwide. It is an official language in Italy, Switzerland, San Marino, and Vatican city. Italy is home to approximately 55 million speakers and Switzerland 471,000. The United States and France each have about one million speakers as well, and other smaller populations can be found in Malta, the Balkan countries of Albania, Croatia and Slovenia, as well as in former Italian colonies including Libya, Somalia, and Eritrea. 
+
+				Italian first emerged in written documents during the 10th century. Both Latin and Italian were used during the 15th and 16th centuries for technical and scientific texts, but over time Latin was used less frequently and Italian became more widely used. Many dialects exist in different regions Italy today, though the official language is the Tuscan dialect. It is used as the main language for literature and the media. Some of the dialects are so different from standard Italian that they are not mutually intelligible, including Sicilian, which is often regarded as a separate language. 
+
+				The Italian department at Rutgers offers numerous courses with the possibility of majoring or minoring in the language.
+				<a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Luxembourgish">
+				<h2>Luxembourgish</h2>
+				<p>Content.<a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Polish">
+				<h2>Polish</h2>
+				<p>The Polish language entails 37,400,000 speakers in Poland as of 2013 and a total of 40,248,740 speakers around the world. Around 454,000 people spoke Polish as a second language in 2013. In Europe, the language is spoken in the Czech Republic, Germany, Hungary, Lithuania, Romania, Slovakia, and Ukraine. A dialect of this language includes Upper Silesian. 
+
+				Rutgers University offers two years of instruction in Polish. Polish language and culture is expressed through organizations like the Polish club and through study abroad opportunities.
+				<a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Ukrainian">
+				<h2>Ukrainian</h2>
+				<p>Content.<a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Yiddish">
+				<h2>Yiddish</h2>
+				<p>Yiddish is a Germanic Language used predominantly among the Ashkenazi Jewish community, having about 3 million speakers to date in Germany, Russia, the Ukraine, Israel, and the USA. Yiddish’s origins lie back in the 10 th century when a distinct German Jewish culture, Ashkenazi, developed. Their every-day language, Middle High German came to be written in the Hebrew alphabet and incorporated many Hebrew and Aramaic vocabulary. Through the centuries this language developed into Judeo-German and then Yiddish, with two dialect, Western and Eastern Yiddish. Eastern Yiddish was spoken in Europe up until World War II. The
+				Holocaust destroyed Jewish communities through Europe and Yiddish usage declined steeply. 
+
+				Today, as a result of a high birth rate amongst Orthodox Jews Yiddish is growing in speakers again and additionally much scholarship, significant portions from non-Jewish scholars interested in the language, is being published.
+				<a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Arabic">
+				<h2>Arabic</h2>
+				<p>Arabic has a 420 million of native speakers, and 2 million non-native speakers worldwide, making it the fifth most spoken language in the world. It is mainly spoken in Middle East and North Africa.<br>
+				Rutgers offers Arabic as both a major and minor, and provides courses in Arabic study. Students have established Arab Cultural Club, as well as Arabic Language Club at Rutgers to promote Arabic language and culture. &nbsp;<a href="#top">^Top</a></p>
+			</div>
+			<div id="Info_Haitian_Creole">
+				<h2>Haitian Creole</h2>
+				<p>Haitian Creole is a French-based creole language, and is spoken by 9.6 million people worldwide. It is the only language of most Haitians. Haitian Creole is a creole language based on French with influences from Portuguese, Spanish, English, Taino, and West African languages. 
+				Rutgers Department of French and Linguistics Department have published some extensive research on Haitian Creole. Rutgers also has an active Haitian Association of Students. <a href="#"><u>Rutgers Alma Mater in Haitian Creole</u></a><a href="#top">^Top</a></p>
+			</div>
+			<div id="#random"><h3>MORE INFO PLEASE!!</h3><a href="#top">^Top</a></p></div>
+			</div>			
+		</div>
+	</div>
+	
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--script> //Calculate the screen height
+$(document).ready(function(){
+	$("#lang_list").css("height", window.innerHeight);
+});
+</script-->
+<script> //smooth scrolling
+	$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+</script>
+<script>
+	$(document).ready(function(){
+		$("#sidebar_toggler").click(function(){
+			$("#sidebar").toggle();
+		});
+	});
+</script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>		
+</body>
+</html>
+

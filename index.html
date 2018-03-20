@@ -2,45 +2,79 @@
 <html>
 	<head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>World Languages at Rutgers</title>
-		<link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <meta charset="UTF-8">
+        <title>World Languages at Rutgers</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./styles/styles.css">
 	</head>
 
 <body>
-<!--header area-->
-<div class="nav">
-    <div class="logo" id="nav_logo">
-        <img src="./World Languages at Rutgers_files/Aresty_Logo.png" alt="aresty_logo">
+<!--navigation area-->
+<div>
+    <div class="col-sm-4 col-xs-12" id="site_logo">
+        <img src="./images/Aresty_Logo.png" alt="aresty_logo">
     </div>
-    <div class="title" id="nav_title">
+    <div class="col-lg-8 col-sm-12" style="display: inline;" id="site_title">
         <h1>World Languages at Rutgers</h1>
     </div>
-    <div class="bar" id="nav_bar">
-       <ul>
-        <li><a class="active" href="http://sp17-547-320-09.rutgers-sci.domains/sh823/home.html">Homepage</a></li>
-        <li><a href="http://sp17-547-320-09.rutgers-sci.domains/sh823/whoweare.html">Who we are</a></li>
-        <li><a href="http://sp17-547-320-09.rutgers-sci.domains/sh823/info.html">Language Information</a></li>
-        <li><a href="http://sp17-547-320-09.rutgers-sci.domains/sh823/interview.html">Video Interview</a></li>
-        <li><a href="http://sp17-547-320-09.rutgers-sci.domains/sh823/contact.html">Contact us</a></li>
+</div>
+    <!--navigation bar-->
+<div class="navbar navbar-expand-md navbar-dark col-12" style="background-color: #E74C3C;">
+    <a class="navbar-brand" href="#"><i>Stories of Languages @ Rutgers</i></a>
+    <!--The menu button that appears in smaller window-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".nav_content" >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--List of Navbar Items--> 
+    <div class="container-fluid">
+        <div class="nav_content collapse navbar-collapse" id="navbar_main">
+        <ul class="navbar-nav mr-auto" id="nav_bar">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/languages_info.html">Language Information</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Video Clips
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="drop_down" style="background-color: #A93226;">
+                    <a class="dropdown-item" href="pages/alma_mater.html">"Rutgers Alma Mater"</a>
+                    <a class="dropdown-item" href="pages/interview_clips.html">Interview Clips</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="pages/about_interview.html" style="color: #D0D3D4;">About our Interview</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/whoweare.html">Who we are</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/contact_us.html" style="text-transform: none;">Contact us</a>
+            </li>
         </ul>
+        <!--form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form-->
+        </div>
     </div>
 </div>
-<div class="test">
-	
-</div>
+<div class="container">
+    <div class="video ">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SFHG5pwklH8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
 
-	<div class="video">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/SFHG5pwklH8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-	</div>
-
-	<div class="part1">
+    <div class="part1">
     <!-- Overview -->
     <div class="title" id="part1_title"><h2>Overview</h2></div>
     <div class="image" id="part1_image"><img src="./World Languages at Rutgers_files/Rutgers_Football.jpg"></div>
     <div class="text" id="part1_text"><p>Rutgers University boasts over 60,000 students, 9,000 faculty members, and 15,000 staff members on the New Brunswick campus alone, not including an additional 450,000 alumni. These numbers, when considered alongside the geographic location of Rutgers, help to create a microcosm of the world right on campus. Deeper analysis of the resulting cultural diversity will reveal linguistic diversity. To begin to understand how languages are represented and function at Rutgers, this study focuses on languages from the all around the world spoken on campus, excluding English. By conducting video-recorded interviews of Rutgers community members who speak these languages, we will gain insight into the relationship between language use and expression of diversity within the University environment. This will be accomplished by collecting the speakersâ€?thoughts about their interactions, experiences, and identities as bilinguals at Rutgers. At the conclusion of this project, the interviews and research findings will be archived in a multimedia presentation that may be accessed through the Internet. Our project website will serve to provide awareness and information about the languages surveyed as well as their respective cultures. Ultimately, the project will shed light on the importance of foreign language study for the purpose of community building at Rutgers University and lay the groundwork for future research about the function of world language use in a college setting. </p>
     </div>
 </div>
-
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>     
 
 </body>
  </html>

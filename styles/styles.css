@@ -1,0 +1,35 @@
+#site_logo{
+	height: 140px;
+	float: left;
+}
+#site_logo img{
+    height:inherit;
+    width:100%;
+}
+/*#site_title{
+	height: 140px;
+}*/
+#site_title h1{
+	height: inherit;
+    font-weight: bold;
+    font-size:300%;
+    text-align: center;
+    font-family: 'UnifrakturCook', cursive;
+}
+#nav_bar a{
+	padding: 8px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#drop_down a{
+	text-transform: none;
+	color: #D4AC0D;
+}
+#drop_down .active_item{
+	color: #F7DC6F;
+}
+/*Replace the default dropmenu animation, which renders a white background color*/
+#drop_down a:hover{
+	color: #F9E79F;
+	background-color: #7B241C;
+}
