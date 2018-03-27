@@ -9,10 +9,18 @@
 	<title>Languages Information</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../styles/styles.css">
-
+	<style>
+		/*@media only screen and (max-width: 720px), (max-aspect-ratio: 3/4){
+			#sidebar{
+				display: none;
+				position: relative;
+				top: initial;
+			}
+		}*/
+	</style>
 </head>
 
-<body translate="no"  data-spy="scroll" data-target=".lang_sublist" data-offset="300" >
+<body translate="no">
 <!--navigation area-->
 <div>
 	<div class="col-sm-4 col-xs-12" id="site_logo">
@@ -80,10 +88,9 @@
 	</div>-->
 	
 	<!--<div class="collapse"  id="lang_list">-->
-	<div class="navbar navbar-expand-md navbar-light bg-light sticky-top  col-md-3 col-sm-12" id="sidebar" style="float: left; overflow: auto; height: 100vh;">
+	<div class="col-md-3 col-sm-12" id="sidebar" style="position: sticky; top: 0; float: left; overflow: auto; height: 100vh;">
 	
-	<div class="collapse navbar-collapse nav_content">
-		<div id="lang_list">
+	<div id="lang_list">
 				<!--(START)Group: Africa-->
 			<div class="card" id="africa">
 				<div class="card-header">
@@ -194,7 +201,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
 		<!--(END)Group: Middle Eastern-->
 	</div>
 	
@@ -203,7 +209,7 @@
 		<div class="bodyimg" id="img_1"><img src="../images/lang_info/Language_Information.jpg"></div>
 
 		<div class="info">
-			<div class="bodytext" id="top">
+			<div class="bodytext">
 				<p>This year we extend our research from European languages to world languages. So far, we have interviewed Rutgers-affiliated people who speak 12 different languages, including:<br><br>
 					Arabic, Bengali, Gujarati, Haitian Creole, Hindi, Hungarian, Japanese, Korean, Mandarin Chinese, Tagalog, Tamil, and Vietnamese.<br><br>
 				Here is a list of introductions about the interviewed languages.</p>
@@ -367,12 +373,19 @@ $(document).ready(function(){
 			}
 		}
 </style-->
-<script> //smooth scrolling
+<script>
+	
+	$(document).ready(function(){
+	    $('body').scrollspy({target: ".lang_sublist", offset: 0.25*($(window).height())});   
+	});
+	
+
+	 //smooth scrolling
 	$(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - 250
+        scrollTop: $($.attr(this, 'href')).offset().top - 0.24*($(window).height())
     }, 500);
 });
     //sidebar toggler
@@ -384,8 +397,12 @@ $(document).ready(function(){
 		});
 	});
 	$(window).resize(function(){
-		if($(window).width() <= 720){
-			$("#sidebar").toggle(100);
+		if($(window).width() <= 720||$(window).width()/$(window).height() <= 0.75){
+			$("#sidebar").css('position', 'static');
+			$("#sidebar").css('top', 'initial')
+			if($("#sidebar").css('display') != 'none'){
+				$("#sidebar").toggle(100);
+			}
 	};
 	});
 </script>
