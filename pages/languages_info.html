@@ -14,13 +14,11 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
 	<style>
-		/*@media only screen and (max-width: 720px), (max-aspect-ratio: 3/4){
-			#sidebar{
-				display: none;
-				position: relative;
-				top: initial;
-			}
-		}*/
+		.card .card-header span{
+			position: absolute;
+			right: 10px;
+			
+		}
 	</style>
 </head>
 
@@ -101,6 +99,7 @@
 					<button class="btn btn-warning" data-toggle="collapse" data-target="#list-africa">
 							Africa
 					</button>
+					<span class="badge badge-primary badge-pill"></span>
 				</div>
 
 				<div class="collapse show" id="collase-africa">
@@ -120,6 +119,7 @@
 					<button class="btn btn-success" data-toggle="collapse" data-target="#collapse-asia">
 							Asia &amp; Pacific
 					</button>
+					<span class="badge badge-primary badge-pill"></span>
 				</div>
 
 				<div class="collapse show" id="collapse-asia">
@@ -150,10 +150,11 @@
 					<button class="btn btn-info" data-toggle="collapse" data-target="#collapse-europe">
 							European
 					</button>
+					<span class="badge badge-primary badge-pill"></span>
 				</div>
 				<div class="collapse" id="collapse-europe">
 					<div class="card-body">
-						<div class="list-group lang_sublist" id="list-asia">
+						<div class="list-group lang_sublist" id="list-europe">
 							<a class="list-group-item list-group-item-action" href="#Info_Albanian">Albanian</a>
 							<a class="list-group-item list-group-item-action" href="#Info_Bulgarian">Bulgarian</a>
 							<a class="list-group-item list-group-item-action" href="#Info_Croatian">Croatian</a>
@@ -177,6 +178,7 @@
 					<button class="btn btn-danger" data-toggle="collapse" data-target="#collapse-latin_america">
 						Latin America
 					</button>
+					<span class="badge badge-primary badge-pill"></span>
 				</div>
 				<div class="collapse show" id="collapse-latin_america">
 					<div class="card-body">
@@ -190,13 +192,14 @@
 			
 			<!--(END)Group: Latin American-->
 			<!--(START)Group: Middle Eastern-->
-			<div class="card" id="middle_eastern">
+			<div class="card" id="middle_east">
 				<div class="card-header">
-					<button class="btn btn-secondary" data-toggle="collapse" data-target="#collapse-middle_eastern">
-						Middle Eastern
+					<button class="btn btn-secondary" data-toggle="collapse" data-target="#collapse-middle_east">
+						Middle East
 					</button>
+					<span class="badge badge-primary badge-pill"></span>
 				</div>
-				<div class="collapse show" id="collapse-middle_eastern">
+				<div class="collapse show" id="collapse-middle_east">
 					<div class="card-body">
 						<div class="list-group lang_sublist" id="list-middle_east">
 							<a class="lang_list_item list-group-item-action" href="#Info_Arabic">Arabic</a>
@@ -400,6 +403,7 @@ $(document).ready(function(){
 			//$("#sidebar").css("display", "initial");
 		});
 	});
+	//sidebar hidden when window shrinks
 	$(window).resize(function(){
 		if($(window).width() <= 720||$(window).width()/$(window).height() <= 0.75){
 			$("#sidebar").css('position', 'static');
@@ -409,6 +413,11 @@ $(document).ready(function(){
 			}
 	};
 	});
+	//generate number of languages within a list
+	$("#asia .card-header span").html($("#list-asia a").length);
+	$("#europe .card-header span").html($("#list-europe a").length);
+	$("#latin_america .card-header span").html($("#list-latin_america a").length);
+	$("#middle_east .card-header span").html($("#list-middle_east a").length);
 </script>
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
