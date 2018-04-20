@@ -10,6 +10,47 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+	<style>
+		.alma_list h5{
+			margin: 20px 30px;  /*if add position: absolute; property, the video would stick to the navbar and overlap with header */
+		}
+
+		.video {
+			display: inline-block;
+			float: left;
+		}
+		.description{
+			width: 40%;
+			display: inline-block; /*inline-block would display aligning to the "bottom" of the video, unless video has "float left"*/
+			line-height: 315px; /* line-height has to work together with PARAGRAPH Setting: inline-block and vertical middle*/
+			margin-left: 80px;
+			text-align: center;
+		}
+		.description p{
+			line-height: 2.5;
+			display: inline-block;
+			vertical-align: middle;
+			text-align: center;
+		}
+		@media only screen and (max-width: 1200px), (max-aspect-ratio: 10/13){
+			
+			.video{
+				float: none;
+			}
+			.description{
+				width: 100%;
+				margin-left: 0px;
+			}
+			.alma_list h5{
+				text-align: center;
+			}
+		}
+		/*@media only screen and (max-width: 720px), (max-aspect-ratio: 10/13){
+			.alma_list{
+				align-content: center;
+			}
+		}*/
+	</style>
 </head>
 <body>
 <!--navigation area-->
@@ -60,6 +101,68 @@
 	</div>
 </div>
 <!--END of navigation area-->
+<div class="container" style="position: relative">
+	<div class="alma_list" id="Alma_Haitian_Creole" style="top: 50px;" > <!--top property has to work with absolute position-->
+		<h5>Haitian Creole Translation</h5>
+		<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/LWn67apLt7A" frameborder="0"></iframe></div>
+		<div class="description"> 
+			 <p>Nou soti Iwen, nou soti pre, nou te vini Rutgers<br />
+    		     Nou ohwazi opronn tout sa nou kapab<br />
+    		     Se nou decide rete<br />
+    		     Nou vilaj kolèj sa gen pakèt bwi<br />
+			     Sou bò dlo nuye Raritan<br />
+			</p>
+		</div>
+	</div>
+	<div class="alma_list" id="Alma_Hungary" > <!--top property has to work with absolute position-->
+		<h5>Hungarian Translation</h5>
+		<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/c6Xj8FIqrRQ" frameborder="0"></iframe></div>
+		<div class="description"> 
+			 <p>Távolról és köyelröl jöttünk Rutgers<br />
+    		     Ugy döntöttünk hogy tov ább tanulunk<br />
+    		     Es letelepedtünk<br />
+    		     Abba a hangos városba<br />
+			     A Raritan régi partján<br />
+			</p>
+		</div>
+	</div>
+	<div class="alma_list" id="Alma_Korean">
+		<h5>Korean Translation</h5>
+		<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/QCLsNp9p6hQ" frameborder="0"></iframe></div>
+		<div class="description">
+			<p>먼곳에서 가까은 곳에서 우리는<br />    럿거스에 와서 <br />
+			    우리가 배욜수왔는 전부룰 풀고<br />
+			    우리는 정착했다<br />
+			    소란스러운 대학가에서<br />
+			</p>
+		</div>
+	</div>
+	<div class="alma_list" id="Alma_Mandarin">
+		<h5>Mandarin Translation</h5>
+		<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/hqiUW3qsSvA" frameborder="0"></iframe></div>
+		<div class="description">
+			<p>自从我们来到逻各斯 <br />
+			   决定去学习所有可以学习的事<br />
+			   我们因此定居下来<br />
+			   在一个喧嚣的校园小镇<br />
+			   坐落在老拉里坦的岸边<br />
+			</p>
+		</div>
+	</div>
+	<div class="alma_list" id="Alma_Vietnamese">
+		<h5>Vietnamese Translation</h5>
+		<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/Q8chgyyxh3I" frameborder="0"></iframe></div>
+		<div class="description">
+			<p>Tư xa tới gần, mình đến trường Rutgers<br />
+			   Và quí định là mình xế học tắt cả học được<br />
+			   Vì thếm mình ở đây<br />
+			   Ở vòng trưởng đại học ồn<br />
+			   Trên nước biểb củ gỏi Raritan<br />
+			</p>
+		</div>
+	</div>
+
+</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>	
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
