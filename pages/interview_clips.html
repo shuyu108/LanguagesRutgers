@@ -11,6 +11,47 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+	<style>
+		.clips_list h5{
+			margin: 20px 30px;  /*if add position: absolute; property, the video would stick to the navbar and overlap with header */
+		}
+
+		.video {
+			display: inline-block;
+			float: left;
+		}
+		.description{
+			width: 40%;
+			display: inline-block; /*inline-block would display aligning to the "bottom" of the video, unless video has "float left"*/
+			line-height: 315px; /* line-height has to work together with PARAGRAPH Setting: inline-block and vertical middle*/
+			margin-left: 80px;
+			text-align: center;
+		}
+		.description h6{
+			line-height: 2.5;
+			display: inline-block;
+			vertical-align: middle;
+			text-align: center;
+		}
+		@media only screen and (max-width: 1200px), (max-aspect-ratio: 10/13){
+			
+			.video{
+				float: none;
+			}
+			.description{
+				width: 100%;
+				margin-left: 0px;
+			}
+			.clips_list h5{
+				text-align: center;
+			}
+		}
+		/*@media only screen and (max-width: 720px), (max-aspect-ratio: 10/13){
+			.alma_list{
+				align-content: center;
+			}
+		}*/
+	</style>
 </head>
 <body>
 <!--navigation area-->
@@ -18,7 +59,7 @@
 	<div class="col-sm-4 col-xs-12" id="site_logo">
 		<img src="../images/Aresty_Logo.png" alt="aresty_logo">
 	</div>
-	<div class="col-lg-8 col-sm-12" style="display: inline-block;" id="site_title">
+	<div class="col-lg-8 col-sm-12" id="site_title">
 		<h1>World Languages at Rutgers</h1>
 	</div>
 </div>
@@ -61,6 +102,50 @@
 	</div>
 </div>
 <!--END of navigation area-->
+
+<div class="container" style="position: relative">
+	<div class="clips_list" id="Clips_Cantonese" style="top: 50px;" > <!--top property has to work with absolute position-->
+		<h5>Cantonese Speaker Interview</h5>
+		<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/b92CD1Y0D9k" frameborder="0"></iframe></div>
+		<div class="description"> 
+			 <h6>"Cantonese is not a Dialect"
+			</h6>
+		</div>
+	</div>
+	
+	<div class="clips_list" id="Clips_Hakka">
+		<h5>Hakka Speaker Interview</h5>
+		<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/sEfo2lQYrpE"frameborder="0"></iframe></div>
+		<div class="description"> 
+			 <h6>
+			</h6>
+		</div>
+	</div>
+	<div class="clips_list" id="Clips_Luxembourgish">
+		<h5>Luxembourgish Speaker Interview</h5>
+		<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/HcDMGkhtlag" frameborder="0"></iframe></div>
+		<div class="description"> 
+			 <h6>"If you make effort to learn Luxembourgish, you are one of us."
+			</h6>
+		</div>
+	</div>
+	<div class="clips_list" id="Clips_Spanish">
+		<h5>Spanish Speaker Interview</h5>
+		<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/pRG0o0DK5tQ" frameborder="0"></iframe></div>
+		<div class="description"> 
+			 <h6>
+			</h6>
+		</div>
+	</div>
+	<div class="clips_list" id="Clips_Turkish">
+		<h5>Turkish Speaker Interview</h5>
+		<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/vhmG0c5nfHk" frameborder="0"></iframe></div>
+		<div class="description"> 
+			 <h6>
+			</h6>
+		</div>
+	</div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>	
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
